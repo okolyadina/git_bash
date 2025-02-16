@@ -1,0 +1,31 @@
+olesakoladina@MacBook-Air-Olesa ~ % cd ~
+olesakoladina@MacBook-Air-Olesa ~ % pwd
+/Users/olesakoladina
+olesakoladina@MacBook-Air-Olesa ~ % mkdir test1
+olesakoladina@MacBook-Air-Olesa ~ % cd test1
+olesakoladina@MacBook-Air-Olesa test1 % touch 1 2 3 
+olesakoladina@MacBook-Air-Olesa test1 % ls
+1	2	3
+olesakoladina@MacBook-Air-Olesa test1 % cd ~
+olesakoladina@MacBook-Air-Olesa ~ % mkdir test2
+olesakoladina@MacBook-Air-Olesa ~ % rm -r test2
+olesakoladina@MacBook-Air-Olesa ~ % rm test1/2
+olesakoladina@MacBook-Air-Olesa ~ % mkdir test3 && touch test3/4 test3/5
+olesakoladina@MacBook-Air-Olesa ~ % rm -r test3
+olesakoladina@MacBook-Air-Olesa ~ % mkdir test4
+olesakoladina@MacBook-Air-Olesa ~ % mv test1/1 test1/3 test4/
+olesakoladina@MacBook-Air-Olesa ~ % echo -e "line\nline\nline" > test4/1 
+olesakoladina@MacBook-Air-Olesa ~ % cat test4/1                         
+line
+line
+line
+olesakoladina@MacBook-Air-Olesa ~ % echo -e "line\nline\nline" > test4/3
+olesakoladina@MacBook-Air-Olesa ~ % cat test4/1 test4/3                 
+line
+line
+line
+line
+line
+line
+olesakoladina@MacBook-Air-Olesa ~ % nano test4/1
+olesakoladina@MacBook-Air-Olesa ~ % 
